@@ -4,6 +4,9 @@ import ejercicios.refactorizacion.ejercicio2.Human;
 import ejercicios.refactorizacion.ejercicio2.IFormatAddress;
 import ejercicios.refactorizacion.ejercicio1.Ejercicio1;
 import ejercicios.refactorizacion.ejercicio3.CalculoMatematico;
+import ejercicios.refactorizacion.ejercicio4.BasicSalaryCalculator;
+import ejercicios.refactorizacion.ejercicio4.Employee;
+import ejercicios.refactorizacion.ejercicio4.ISalaryCalculator;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,7 +34,7 @@ public class Main {
 
         Human human = new Human("Pablo", 41, address, iFormatAddress);
 
-        System.out.println(human);
+        System.out.println(human.toString());
         System.out.println();
 
         // Comprobación Ejercicio 3
@@ -41,6 +44,14 @@ public class Main {
         System.out.println();
         calculoMatematico.calculoRaizCuadrada(8,2,2);
         System.out.println();
+
+        // Comprobación Ejercicio 4
+        ISalaryCalculator monthSalary = new BasicSalaryCalculator();
+        Employee employee1 = new Employee(30000, 6000, monthSalary);
+
+        System.out.println(employee1.toString());
+        System.out.println();
+
 
     }
 

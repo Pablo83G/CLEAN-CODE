@@ -22,9 +22,7 @@ public class Human {
         this.iFormatAddress = iFormatAddress;
     }
 
-    public Human() {
-
-    }
+    public Human() {}
 
     public String getName() {
         return name;
