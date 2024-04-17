@@ -1,4 +1,4 @@
-package ejercicios.refactorizacion1.ejercicio2;
+package ejercicios.refactorizacion.ejercicio2;
 
 public class Address extends Human {
 

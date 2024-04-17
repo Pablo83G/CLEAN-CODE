@@ -1,8 +1,9 @@
-import ejercicios.refactorizacion1.ejercicio2.Address;
-import ejercicios.refactorizacion1.ejercicio2.DefaultFormatAddress;
-import ejercicios.refactorizacion1.ejercicio2.Human;
-import ejercicios.refactorizacion1.ejercicio2.IFormatAddress;
-import ejercicios.refactorizacion1.ejercicio1.Ejercicio1;
+import ejercicios.refactorizacion.ejercicio2.Address;
+import ejercicios.refactorizacion.ejercicio2.DefaultFormatAddress;
+import ejercicios.refactorizacion.ejercicio2.Human;
+import ejercicios.refactorizacion.ejercicio2.IFormatAddress;
+import ejercicios.refactorizacion.ejercicio1.Ejercicio1;
+import ejercicios.refactorizacion.ejercicio3.CalculoMatematico;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +32,16 @@ public class Main {
         Human human = new Human("Pablo", 41, address, iFormatAddress);
 
         System.out.println(human);
+        System.out.println();
+
+        // Comprobación Ejercicio 3
+        CalculoMatematico calculoMatematico = new CalculoMatematico();
+
+        calculoMatematico.calculoRaizCuadrada(1,5,2);
+        System.out.println();
+        calculoMatematico.calculoRaizCuadrada(8,2,2);
+        System.out.println();
 
     }
+
 }
